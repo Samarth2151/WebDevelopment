@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment Links</title>
+    <style>
+        :root {
+            --primary: #4a6fa5;
+            --secondary: #e74c3c;
+            --accent: #2ecc71;
+            --light: #f8f9fa;
+            --dark: #2c3e50;
+        }
+        body {
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 50px;
+            background: linear-gradient(145deg, #f0f4f8 0%, #dfe6f0 100%);
+            border: 3px double var(--primary);
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12),
+                        inset 0 0 15px rgba(74, 111, 165, 0.2);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 3rem;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            padding-bottom: 20px;
+        }
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 30%;
+            width: 40%;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            border-radius: 4px;
+        }
+        .assignment-list {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            gap: 20px;
+        }
+        .assignment-list li {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow: hidden;
+            position: relative;
+        }
+        .assignment-list li::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(74,111,165,0.1) 0%, rgba(46,204,113,0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .assignment-list li:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        .assignment-list li:hover::before {
+            opacity: 1;
+        }
+        .assignment-list a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 1.2rem;
+            display: block;
+            padding: 25px 30px;
+            position: relative;
+            z-index: 1;
+        }
+        .assignment-list a::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 6px;
+            background: var(--primary);
+            transition: all 0.3s ease;
+        }
+        .assignment-list a:hover {
+            color: var(--secondary);
+        }
+        .assignment-list a:hover::before {
+            width: 10px;
+            background: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Assignments</h1>
+    <ul class="assignment-list">
+        <li><a href="Assignment 2.html">Assignment 2 - Static Page</a></li>
+        <li><a href="Assignment 3.html">Assignment 3 - Text Formatting</a></li>
+        <li><a href="Assignment 4.html">Assignment 4 - HTML Lists</a></li>
+        <li><a href="Assignment 5.html">Assignment 5 - Image Tags</a></li>
+        <li><a href="Assignment 6.html">Assignment 6 - Iframe</a></li>
+        <li><a href="Assignment 7.html">Assignment 7 - Link Tags</a></li>
+        <li><a href="Assignment 8.html">Assignment 8 - Time Table</a></li>
+        <li><a href="Assignment 9.html">Assignment 9 - Employee Registration Form</a></li>
+        <li><a href="Assignment 10.html">Assignment 10 - Resume</a></li>
+        <li><a href="Assignment 11.xml">Assignment 11 - Student Data (XML)</a></li>
+        <li><a href="Assignment 12.htm">Assignment 12 - Fruit Price List</a></li>
+        <li><a href="CSS/index.html">CSS Examples</a></li>
+    </ul>
+</body>
+</html>

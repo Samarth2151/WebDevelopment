@@ -1,0 +1,146 @@
+<html>
+<head>
+  <title>Employee Registration</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 40px;
+      margin: 20px;
+      border: 3px solid #000000; 
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.15);
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #2c3e50;
+      font-size: 0.95rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      background-color: #f8f9fa;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #4361ee;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .radio-option {
+      display: flex;
+      align-items: center;
+    }
+
+    button {
+      margin-top: 25px;
+      background: linear-gradient(to right, #4361ee, #3a0ca3);
+      color: white;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      width: 100%;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1><center>Assignment 9</center></h1>
+  <h2><center>Employee Registration form</center></h2>
+
+
+
+  <form>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="empid">Employee ID:</label>
+    <input type="text" id="empid" name="empid" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="position">Position:</label>
+    <input type="text" id="position" name="position" required>
+
+    <label for="department">Department:</label>
+    <select id="department" name="department" required>
+      <option value="">-- Select Department --</option>
+      <option value="HR">Human Resources</option>
+      <option value="Finance">Finance</option>
+      <option value="IT">Information Technology</option>
+      <option value="Marketing">Marketing</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="joining">Joining Date:</label>
+    <input type="date" id="joining" name="joining" required>
+
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" name="salary" required>
+
+    <label>Employment Status:</label>
+    <input type="radio" id="fulltime" name="status" value="Full-Time" required>
+    <label for="fulltime" style="display:inline;">Full-Time</label>
+    <input type="radio" id="parttime" name="status" value="Part-Time">
+    <label for="parttime" style="display:inline;">Part-Time</label>
+
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
